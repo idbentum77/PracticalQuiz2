@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A-Frame Practical Quiz 2</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky color="#87CEEB"></a-sky>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="50" height="50" color="#228B22"></a-plane>
+
+      <a-cylinder position="0 0.01 0" radius="2.5" height="0.01" color="#8B0000"></a-cylinder>
+
+      <a-entity id="table" position="0 0 0">
+        <a-box position="0 1 0" width="3" height="0.1" depth="2" color="#8B4513"></a-box>
+        <a-cylinder position="-1.4 0.5 -0.9" radius="0.05" height="1" color="#5C4033"></a-cylinder>
+        <a-cylinder position="1.4 0.5 -0.9" radius="0.05" height="1" color="#5C4033"></a-cylinder>
+        <a-cylinder position="-1.4 0.5 0.9" radius="0.05" height="1" color="#5C4033"></a-cylinder>
+        <a-cylinder position="1.4 0.5 0.9" radius="0.05" height="1" color="#5C4033"></a-cylinder>
+      </a-entity>
+
+      <a-entity id="chair1" position="1.5 0 0" rotation="0 -90 0">
+        <a-box position="0 0.5 0" width="1" height="0.1" depth="1" color="#A0522D"></a-box>
+        <a-box position="0 1 -0.45" width="1" height="1" depth="0.1" color="#A0522D"></a-box>
+        <a-cylinder position="-0.4 0.25 -0.4" radius="0.05" height="0.5" color="#5C4033"></a-cylinder>
+        <a-cylinder position="0.4 0.25 -0.4" radius="0.05" height="0.5" color="#5C4033"></a-cylinder>
+        <a-cylinder position="-0.4 0.25 0.4" radius="0.05" height="0.5" color="#5C4033"></a-cylinder>
+        <a-cylinder position="0.4 0.25 0.4" radius="0.05" height="0.5" color="#5C4033"></a-cylinder>
+      </a-entity>
+
+      <a-entity id="chair2" position="-1.5 0 0" rotation="0 90 0">
+        <a-box position="0 0.5 0" width="1" height="0.1" depth="1" color="#A0522D"></a-box>
+        <a-box position="0 1 -0.45" width="1" height="1" depth="0.1" color="#A0522D"></a-box>
+        <a-cylinder position="-0.4 0.25 -0.4" radius="0.05" height="0.5" color="#5C4033"></a-cylinder>
+        <a-cylinder position="0.4 0.25 -0.4" radius="0.05" height="0.5" color="#5C4033"></a-cylinder>
+        <a-cylinder position="-0.4 0.25 0.4" radius="0.05" height="0.5" color="#5C4033"></a-cylinder>
+        <a-cylinder position="0.4 0.25 0.4" radius="0.05" height="0.5" color="#5C4033"></a-cylinder>
+      </a-entity>
+
+      <a-cylinder position="0 1.055 -0.4" radius="0.3" height="0.02" color="#FFFFFF"></a-cylinder>
+
+      <a-entity position="0 1.05 0">
+        <a-cylinder position="0 0.15 0" radius="0.15" height="0.3" color="#006400"></a-cylinder>
+        <a-cylinder position="0 0.15 0" radius="0.151" height="0.1" color="#F5DEB3"></a-cylinder>
+        <a-cylinder position="0 0.31 0" radius="0.152" height="0.02" color="#C0C0C0"></a-cylinder>
+        <a-cylinder position="0 0.32 0" radius="0.145" height="0.02" color="#004d00"></a-cylinder>
+      </a-entity>
+      
+      <a-entity position="0.4 1.05 0.3">
+        <a-cylinder position="0 0.075 0" radius="0.1" height="0.15" color="#FFF8DC"></a-cylinder>
+        <a-cylinder position="0 0.075 0" radius="0.101" height="0.05" color="#D2042D"></a-cylinder>
+        <a-cylinder position="0 0.15 0" radius="0.101" height="0.01" color="#C0C0C0"></a-cylinder>
+        <a-cylinder position="0 0.0 0" radius="0.101" height="0.01" color="#C0C0C0"></a-cylinder>
+      </a-entity>
+
+      <a-entity position="-0.5 1.05 -0.2">
+        <a-cylinder position="0 0.1 0" radius="0.08" height="0.2" color="#DC143C"></a-cylinder>
+        <a-cylinder position="0 0.195 0" radius="0.07" height="0.02" color="#5A0000"></a-cylinder>
+        <a-torus position="-0.08 0.1 0" radius="0.04" tube="0.01" rotation="0 0 90" color="#DC143C"></a-torus>
+      </a-entity>
+
+      <a-entity position="-0.5 1.05 0.3">
+        <a-cylinder position="0 0.1 0" radius="0.08" height="0.2" color="#4169E1"></a-cylinder>
+        <a-cylinder position="0 0.195 0" radius="0.07" height="0.02" color="#00005A"></a-cylinder>
+        <a-torus position="-0.08 0.1 0" radius="0.04" tube="0.01" rotation="0 0 90" color="#4169E1"></a-torus>
+      </a-entity>
+
+      <a-entity position="0 2.5 4">
+        <a-camera></a-camera>
+      </a-entity>
+      <a-light type="ambient" color="#fff"></a-light>
+    </a-scene>
+  </body>
+</html>
